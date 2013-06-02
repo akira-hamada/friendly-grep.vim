@@ -19,7 +19,7 @@ Options
 ------------
 
 ```vim
-  let g:friendlygrep_target_dir = 'your/project_dir/often/grep/'
+  let g:friendlygrep_target_dir = 'path/to/dir/you/often/grep/'
   let g:friendlygrep_recursively = 1
   let g:friendlygrep_display_result_in = 'tab'
 ```
