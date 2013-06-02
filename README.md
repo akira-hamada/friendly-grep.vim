@@ -6,7 +6,7 @@ you can use vimgrep easily with this plugin.
 Installation
 ------------
 
-if you use vundle, add the following line into your .vimrc, `then :BundleInstall`
+if you use vundle, execute `:BundleInstall` after adding the following line into your .vimrc.
 
 ```vim:.vimrc
   Bundle 'akira-hamada/friendly-grep.vim'
