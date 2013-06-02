@@ -23,8 +23,3 @@ Options
   let g:friendlygrep_recursively = 1
   let g:friendlygrep_display_result_in = 'tab'
 ```
-
-License
-------------
-
-blah blah
