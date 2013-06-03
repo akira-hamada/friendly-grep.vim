@@ -50,6 +50,7 @@ function! friendlygrep#FriendlyGrep()
   catch
     if g:friendlygrep_display_result_in == 'tab'
       tabclose
+      tabNext
     elseif g:friendlygrep_display_result_in == 'split' || g:friendlygrep_display_result_in == 'vsplit'
       quit!
     endif
