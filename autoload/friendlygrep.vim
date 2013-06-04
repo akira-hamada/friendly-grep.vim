@@ -28,18 +28,18 @@ function! friendlygrep#FriendlyGrep()
 
   if exists('g:friendlygrep_display_result_in')
     if g:friendlygrep_display_result_in == 'tab'
-      let s:display_style = 'tabnew'
+      let display_style = 'tabnew'
     elseif g:friendlygrep_display_result_in == 'split'
-      let s:display_style = 'split'
+      let display_style = 'split'
     elseif g:friendlygrep_display_result_in == 'vsplit'
-      let s:display_style = '55vsplit'
+      let display_style = '55vsplit'
     endif
   else
-    let s:display_style = 'split'
-    let g:friendlygrep_display_result_in = s:display_style
+    let display_style = 'split'
+    let g:friendlygrep_display_result_in = display_style
   endif
   if g:friendlygrep_display_result_in == 'tab' || g:friendlygrep_display_result_in == 'split' || g:friendlygrep_display_result_in == 'vsplit'
-    execute s:display_style
+    execute display_style
   endif
 
   let move_tab_back_flg = s:set_move_tab_back_flg()
@@ -113,7 +113,7 @@ endfunction
 function! s:set_move_tab_back_flg()
   let move_tab_back_flg = 0
 
-  if s:display_style == 'tabnew'
+  if g:friendlygrep_display_result_in == 'tab'
     if tabpagenr() != tabpagenr('$')
       let move_tab_back_flg = 1
     endif
