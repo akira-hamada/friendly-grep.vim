@@ -53,7 +53,7 @@ function! friendlygrep#FriendlyGrep()
     if g:friendlygrep_display_result_in == 'tab'
       tabclose
       if move_tab_back_flg == 1
-        tabNext
+        tabprevious
       endif
     elseif g:friendlygrep_display_result_in == 'split' || g:friendlygrep_display_result_in == 'vsplit'
       quit!
