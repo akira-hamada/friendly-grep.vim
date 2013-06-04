@@ -28,19 +28,21 @@ function! friendlygrep#FriendlyGrep()
 
   if exists('g:friendlygrep_display_result_in')
     if g:friendlygrep_display_result_in == 'tab'
-      let display_style = 'tabnew'
+      let s:display_style = 'tabnew'
     elseif g:friendlygrep_display_result_in == 'split'
-      let display_style = 'split'
+      let s:display_style = 'split'
     elseif g:friendlygrep_display_result_in == 'vsplit'
-      let display_style = '55vsplit'
+      let s:display_style = '55vsplit'
     endif
   else
-    let display_style = 'split'
-    let g:friendlygrep_display_result_in = display_style
+    let s:display_style = 'split'
+    let g:friendlygrep_display_result_in = s:display_style
   endif
   if g:friendlygrep_display_result_in == 'tab' || g:friendlygrep_display_result_in == 'split' || g:friendlygrep_display_result_in == 'vsplit'
-    execute display_style
+    execute s:display_style
   endif
+
+  let move_tab_back_flg = s:set_move_tab_back_flg()
 
   try
     if g:friendlygrep_display_result_in == 'quickfix'
@@ -50,7 +52,9 @@ function! friendlygrep#FriendlyGrep()
   catch
     if g:friendlygrep_display_result_in == 'tab'
       tabclose
-      tabNext
+      if move_tab_back_flg == 1
+        tabNext
+      endif
     elseif g:friendlygrep_display_result_in == 'split' || g:friendlygrep_display_result_in == 'vsplit'
       quit!
     endif
@@ -104,6 +108,18 @@ function! s:set_grep_recursive_option_with(prompt_msg, target)
   endif
 
   return target
+endfunction
+
+function! s:set_move_tab_back_flg()
+  let move_tab_back_flg = 0
+
+  if s:display_style == 'tabnew'
+    if tabpagenr() != tabpagenr('$')
+      let move_tab_back_flg = 1
+    endif
+  endif
+
+  return move_tab_back_flg
 endfunction
 
 let &cpo = s:save_cpo
