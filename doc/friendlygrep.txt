@@ -32,13 +32,13 @@ you can use vimgrep easily with the following command.
 ==============================================================================
 OPTIONS                                    *friendlygrep-options*
 
-g:friendlygrep_target_dir                  *g:friendlygrep_target_dir
+g:friendlygrep_target_dir                  *g:friendlygrep_target_dir*
     You can set directory path you grep friquently.
 
     The default value is '' (empty strings)
 
 
-g:friendlygrep_recursively                 *g:friendlygrep_recursively
+g:friendlygrep_recursively                 *g:friendlygrep_recursively*
     if you set this option 1, you can grep recursively always.
     if you set this 0, you cant do it nonrecursively always.
 
@@ -48,7 +48,7 @@ g:friendlygrep_recursively                 *g:friendlygrep_recursively
     The default value is null (ask you recursive option everytime you grep)
 
 
-g:friendlygrep_display_result_in           *g:friendlygrep_display_result_in
+g:friendlygrep_display_result_in           *g:friendlygrep_display_result_in*
     this option decide style to open grep results.
     you can use following values as options.
 
