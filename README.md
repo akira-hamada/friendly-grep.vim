@@ -1,7 +1,7 @@
 friendly-grep.vim
 ============
 
-you can use vimgrep easily with this plugin.
+you can grep easily with this plugin.
 
 Installation
 ------------
