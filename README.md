@@ -47,7 +47,7 @@ Options
 Vimgrep Tips
 ---
 
-You might want to add the following shortcuts to jump around the grep result.
+You might want to add the following shortcuts to jump around the grep result into your .vimrc.
 
 ```vim:.vimrc
   nnoremap <LEFT> :cprevious<CR>
