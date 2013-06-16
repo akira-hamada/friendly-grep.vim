@@ -3,6 +3,8 @@ friendly-grep.vim
 
 you can grep easily with this plugin.
 
+<a href="http://www.youtube.com/watch?v=xpNYo39pCkg" target="_blank">demo movie</a>
+
 Installation
 ------------
 
@@ -24,8 +26,6 @@ just execute the following command.
 I recommend you add shortcut for the function into your .vimrc like this.
 
 `nnoremap <C-g> <ESC>:FriendlyGrep<CR>`
-
-<a href="http://www.youtube.com/watch?v=xpNYo39pCkg" target="_blank">demo movie</a>
 
 Options
 ------------
