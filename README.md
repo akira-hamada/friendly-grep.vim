@@ -21,11 +21,22 @@ just execute the following command.
 
 `:FriendlyGrep`
 
+I recommend you add shortcut for the function into your vimrc like this.
+
+`nnoremap <C-g> <ESC>:FriendlyGrep<CR>`
+
+[demo movie](http://www.youtube.com/watch?v=xpNYo39pCkg)
+
 Options
 ------------
 
 ```vim
   let g:friendlygrep_target_dir = 'path/to/dir/you/often/grep/'
+
   let g:friendlygrep_recursively = 1
+  " if you set this option 1, you can grep recursively always without question.
+
   let g:friendlygrep_display_result_in = 'tab'
+  " if you set 'tab' for this option, the plugin opens result in newtab.
+  " you can set 'split', 'vsplit' or 'quickfix' as value.
 ```
