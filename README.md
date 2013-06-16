@@ -35,7 +35,7 @@ Options
   " You can set directory path you grep friquently.
 
   let g:friendlygrep_recursively = 1
-  " if you set this option 1, you can grep recursively always without question.
+  " if you set this option 1, you can grep recursively always without a prompt for you.
   " The default value is null (ask you recursive option everytime you grep)
 
   let g:friendlygrep_display_result_in = 'tab'
