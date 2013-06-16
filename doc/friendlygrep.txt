@@ -26,7 +26,7 @@ INTRODUCTION                                    *friendlygrep*
 
 Download files and put them into your plugin and autoload directory.
 
-you can use vimgrep easily with the following command.
+you can grep easily with the following command.
     :FriendlyGrep
 
 ==============================================================================
