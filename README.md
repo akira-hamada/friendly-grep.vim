@@ -21,7 +21,7 @@ just execute the following command.
 
 `:FriendlyGrep`
 
-I recommend you add shortcut for the function into your vimrc like this.
+I recommend you add shortcut for the function into your .vimrc like this.
 
 `nnoremap <C-g> <ESC>:FriendlyGrep<CR>`
 
