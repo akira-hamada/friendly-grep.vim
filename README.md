@@ -25,7 +25,7 @@ I recommend you add shortcut for the function into your vimrc like this.
 
 `nnoremap <C-g> <ESC>:FriendlyGrep<CR>`
 
-[demo movie](http://www.youtube.com/watch?v=xpNYo39pCkg)
+<a href="http://www.youtube.com/watch?v=xpNYo39pCkg" target="_blank">demo movie</a>
 
 Options
 ------------
