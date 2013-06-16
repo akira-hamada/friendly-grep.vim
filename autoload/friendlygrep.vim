@@ -1,9 +1,6 @@
 " autoload/friendlygrep.vim
 " Author:  Akira Hamada <drumcorps.enthusiast@gmail.com>
 " Version: 0.1
-" Install this file as autoload/friendlygrep.vim.  This file is sourced manually by
-" plugin/friendlygrep.vim.  It is in autoload directory to allow for future usage of
-" Vim 7's autoload feature.
 
 let s:save_cpo = &cpo
 set cpo&vim
