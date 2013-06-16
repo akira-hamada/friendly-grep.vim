@@ -32,11 +32,14 @@ Options
 
 ```vim
   let g:friendlygrep_target_dir = 'path/to/dir/you/often/grep/'
+  " You can set directory path you grep friquently.
 
   let g:friendlygrep_recursively = 1
   " if you set this option 1, you can grep recursively always without question.
+  " The default value is null (ask you recursive option everytime you grep)
 
   let g:friendlygrep_display_result_in = 'tab'
   " if you set 'tab' for this option, the plugin opens result in newtab.
   " you can set 'split', 'vsplit' or 'quickfix' as value.
+  " The default value is 'split' (open results in top splited window)
 ```
