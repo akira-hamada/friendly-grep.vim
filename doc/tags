@@ -1,0 +1,10 @@
+friendlygrep	friendlygrep.txt	/*friendlygrep*
+friendlygrep-about	friendlygrep.txt	/*friendlygrep-about*
+friendlygrep-author	friendlygrep.txt	/*friendlygrep-author*
+friendlygrep-contents	friendlygrep.txt	/*friendlygrep-contents*
+friendlygrep-introduction	friendlygrep.txt	/*friendlygrep-introduction*
+friendlygrep-options	friendlygrep.txt	/*friendlygrep-options*
+friendlygrep.txt	friendlygrep.txt	/*friendlygrep.txt*
+g:friendlygrep_display_result_in	friendlygrep.txt	/*g:friendlygrep_display_result_in*
+g:friendlygrep_recursively	friendlygrep.txt	/*g:friendlygrep_recursively*
+g:friendlygrep_target_dir	friendlygrep.txt	/*g:friendlygrep_target_dir*
