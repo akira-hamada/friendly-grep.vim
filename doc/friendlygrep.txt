@@ -1,6 +1,6 @@
 *friendlygrep.txt*
 
-Author: Akira Hamada                             *friendlygrep-author*
+Author: Akira Hamada                            *friendlygrep-author*
 <http://akira-hamada.github.com/>
 
 License: MIT license  {{{
@@ -23,8 +23,14 @@ License: MIT license  {{{
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 }}}
 
+CONTENTS                                        *friendlygrep-contents*
+
+INTRODUCTION        |friendlygrep-introduction|
+OPTIONS             |friendlygrep-options|
+ABOUT               |friendlygrep-about|
+
 ==============================================================================
-INTRODUCTION                                    *friendlygrep*
+INTRODUCTION                                    *friendlygrep-introduction*
 
 Download files and put them into your plugin and autoload directory.
 
@@ -32,7 +38,7 @@ you can grep easily with the following command.
     :FriendlyGrep
 
 ==============================================================================
-OPTIONS                                    *friendlygrep-options*
+OPTIONS                                    *friendlygrep* *friendlygrep-options*
 
 g:friendlygrep_target_dir                  *g:friendlygrep_target_dir*
     You can set directory path you grep friquently.
