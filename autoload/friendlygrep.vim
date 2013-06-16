@@ -48,7 +48,7 @@ function! friendlygrep#FriendlyGrep()
     if g:friendlygrep_display_result_in == 'quickfix'
       let target .= ' | cw'
     endif
-    execute 'vimgrep'.' '.query.' '.target
+    execute 'vimgrep'.' /'.query.'/g '.target
   catch
     if g:friendlygrep_display_result_in == 'tab'
       tabclose
