@@ -13,7 +13,7 @@ function! friendlygrep#FriendlyGrep()
     return
   endif
 
-  let target = s:get_grep_target_with('target file/dir: ')
+  let target = s:get_grep_target_with('target dir or file: ')
   if s:return_flg == 1
     return
   endif
